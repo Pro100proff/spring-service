@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS CONTACT;
+
+CREATE TABLE CONTACT
+(
+    id INTEGER
+);
+
+DROP TABLE IF EXISTS APPLICATION;
+
+CREATE TABLE APPLICATION
+(
+    id           INTEGER,
+    contact_id   INTEGER,
+    dt_created   TIMESTAMP,
+    product_name VARCHAR(250)
+);
